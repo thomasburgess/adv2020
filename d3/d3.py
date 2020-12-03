@@ -25,7 +25,7 @@ def main():
     for right, down in ((1, 1), (3, 1), (5, 1), (7, 1), (1, 2)):
         t = traverse(arr, right, down)
         mul *= t
-        print(right, down, traverse(arr, right, down))
+        print(right, down, t)
     print(mul)
 
 
