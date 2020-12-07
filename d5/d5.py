@@ -4,7 +4,7 @@ import gzip
 
 def read(file: str) -> List[str]:
     with gzip.open(file, "rt") as f:
-        return f.read().split()
+        return f.read().split("\n\n")
 
 
 def divide(code: str, upper: int) -> int:
